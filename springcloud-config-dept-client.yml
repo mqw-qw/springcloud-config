@@ -9,8 +9,7 @@ server:
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.mqw.springCloud.entities    # 所有Entity别名类所在包
-  mapper-locations:
-    - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  mapper-locations: classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 spring:
   profiles: dev
@@ -59,13 +58,12 @@ server:
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.mqw.springCloud.entities   # 所有Entity别名类所在包
-  mapper-locations:
-    - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  mapper-locations: classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 spring:
   profiles: test
   application:
-    name: microservicecloud-dept
+    name: springcloud-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
