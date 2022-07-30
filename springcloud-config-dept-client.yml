@@ -60,7 +60,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/springcloud1             # 数据库名称
+    url: jdbc:mysql://localhost:3306/springcloud2             # 数据库名称
     username: root
     password: mqw123123..
     dbcp2:
