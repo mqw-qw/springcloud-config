@@ -4,7 +4,7 @@ spring:
       - dev
 ---
 server:
-  port:8201
+  port: 8201
 spring:
   profiles: dev
   application:
@@ -13,17 +13,17 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-dev.com:7001/eureka/
-
+      defaultZone: http://eureka7001.com:7001/eureka/
 ---
 server:
-  port:8202
+  port: 8202
 spring:
   profiles: test
   application:
     name: springcloud-config-client
 
+# spring-cloud部分
 eureka:
-  client:
+  client: #客户端注册进eureka服务列表内
     service-url:
-      defaultZone: http://eureka-test.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
